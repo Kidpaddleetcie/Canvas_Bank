@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Moustache</title>
+    <link rel="stylesheet" href="canvas.css">
+
+    <!--[IF LT IE 9]><script type="text/javascript" src = "excanvas.js" ></script><![endif]-->
+    <script type="text/javascript">
+        function setcanvas() {
+            let canvas = document.getElementById("moustache");
+            if (canvas.getContext) {
+                let moustache = canvas.getContext("2d");
+                drawcanvas(moustache);
+            } else {
+                alert("Canvas NOT supported");
+            }
+        }
+
+        function drawcanvas(moustache) {
+
+            //Shape6;
+            moustache.shadowColor = "rgba(0,0,0,0)";
+            moustache.strokeStyle = "rgba(0,0,0,1)";
+            moustache.lineWidth = 1;
+            moustache.lineCap = "butt";
+            moustache.lineJoin = "miter";
+            moustache.beginPath();
+            moustache.moveTo(57, 299);
+            moustache.bezierCurveTo(102, 299, 111, 268, 267, 310);
+            moustache.bezierCurveTo(407, 268, 386, 300, 436, 300);
+            moustache.bezierCurveTo(455, 254, 499, 245, 481, 259);
+            moustache.bezierCurveTo(514, 363, 496, 395, 455, 382);
+            moustache.bezierCurveTo(341, 394, 338, 390, 270, 338);
+            moustache.bezierCurveTo(175, 397, 182, 399, 59, 378);
+            moustache.bezierCurveTo(12, 398, -15, 356, 8, 264);
+            moustache.bezierCurveTo(-12, 241, 35, 254, 57, 299);
+            moustache.closePath();
+            moustache.stroke();
+            moustache.shadowOffsetX = 15;
+            moustache.shadowOffsetY = 15;
+            moustache.shadowBlur = 0;
+            moustache.shadowColor = "rgba(0,0,0,0)";
+            moustache.fillStyle = "rgba(0,0,0,1)";
+            moustache.fill();
+        }
+    </script>
+</head>
+
+<body onload="setcanvas()">
+    <canvas id="moustache" width="500" height="500"></canvas>
+    <a href="../../index.html" class="back_to_index">Revenir à l'index !</a>
+
+</body>
+
+</html>

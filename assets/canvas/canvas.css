@@ -1,0 +1,22 @@
+.back_to_index {
+    position: absolute;
+    display: block;
+    width: 375px;
+    height: 55px;
+    background: blue;
+    color: white;
+    right: 0;
+    bottom: 2px;
+    text-align: center;
+    text-shadow: 0 1px 0 black;
+    transform: scale(1.0);
+    box-shadow: inset 0 0 2px black;
+    font-size: 50px;
+}
+
+.back_to_index:hover {
+    background: rgb(87, 87, 255);
+    color: white;
+    transform: scale(0.95);
+    box-shadow: inset 0 0 1px black;
+}

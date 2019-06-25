@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" href="canvas.css">
+    <title>Bouteille</title>
+    <!--[IF LT IE 9]><script type="text/javascript" src = "excanvas.js" ></script><![endif]-->
+    <script type="text/javascript">
+        function setcanvas() {
+            let canvas = document.getElementById("canvasarea");
+            if (canvas.getContext) {
+                let bouteille = canvas.getContext("2d");
+                drawcanvas(bouteille);
+            } else {
+                alert("Canvas NOT supported");
+            }
+        }
+
+        function drawcanvas(bouteille) {
+
+            //Shape0;
+            bouteille.shadowColor = "rgba(0,0,0,0)";
+            bouteille.strokeStyle = "rgba(0,0,0,1)";
+            bouteille.lineWidth = 1;
+            bouteille.lineCap = "butt";
+            bouteille.lineJoin = "miter";
+            bouteille.beginPath();
+            bouteille.moveTo(37, 12);
+            bouteille.bezierCurveTo(37, 21, 37, 39, 37, 48);
+            bouteille.bezierCurveTo(10, 49, 12, 60, 17, 73);
+            bouteille.bezierCurveTo(17, 78, 18, 88, 18, 93);
+            bouteille.bezierCurveTo(33, 93, 62, 94, 76, 94);
+            bouteille.bezierCurveTo(76, 89, 75, 78, 74, 72);
+            bouteille.bezierCurveTo(78, 61, 82, 50, 55, 49);
+            bouteille.bezierCurveTo(54, 40, 53, 21, 52, 12);
+            bouteille.bezierCurveTo(48, 12, 41, 12, 37, 12);
+            bouteille.closePath();
+            bouteille.stroke();
+            bouteille.shadowOffsetX = 15;
+            bouteille.shadowOffsetY = 15;
+            bouteille.shadowBlur = 0;
+            bouteille.shadowColor = "rgba(0,0,0,0)";
+            grad = bouteille.createLinearGradient(31, 89, 77, 29);
+            grad.addColorStop(0, "rgba(134,191,245,0.6)");
+            grad.addColorStop(1, "rgba(255,255,255,1)");
+            bouteille.fillStyle = grad;
+            bouteille.fill();
+
+            //Shape1;
+            bouteille.shadowColor = "rgba(0,0,0,0)";
+            bouteille.strokeStyle = "rgba(0,0,0,1)";
+            bouteille.lineWidth = 1;
+            bouteille.lineCap = "butt";
+            bouteille.lineJoin = "miter";
+            bouteille.beginPath();
+            bouteille.moveTo(20, 59);
+            bouteille.lineTo(70, 59);
+            bouteille.lineTo(70, 81);
+            bouteille.lineTo(20, 81);
+            bouteille.lineTo(20, 59);
+            bouteille.closePath();
+            bouteille.stroke();
+            bouteille.shadowOffsetX = 15;
+            bouteille.shadowOffsetY = 15;
+            bouteille.shadowBlur = 0;
+            bouteille.shadowColor = "rgba(0,0,0,0)";
+            bouteille.fillStyle = "rgba(255,255,255,1)";
+            bouteille.fill();
+        }
+    </script>
+</head>
+
+<body onload="setcanvas()">
+    <canvas id="canvasarea" width="100" height="100"></canvas>
+    <a href="../../index.html" class="back_to_index">Revenir à l'index !</a>
+
+</body>
+
+</html>

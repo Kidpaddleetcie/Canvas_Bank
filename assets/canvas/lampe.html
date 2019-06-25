@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Lampe</title>
+    <link rel="stylesheet" href="canvas.css">
+
+    <!--[IF LT IE 9]><script type="text/javascript" src = "excanvas.js" ></script><![endif]-->
+    <script type="text/javascript">
+        function setcanvas() {
+            let canvas = document.getElementById("canvasarea");
+            if (canvas.getContext) {
+                let lampe = canvas.getContext("2d");
+                drawcanvas(lampe);
+            } else {
+                alert("Canvas NOT supported");
+            }
+        }
+
+        function drawcanvas(lampe) {
+
+            //Shape0;
+            lampe.shadowColor = "rgba(0,0,0,0)";
+            lampe.strokeStyle = "rgba(0,0,0,1)";
+            lampe.lineWidth = 1;
+            lampe.lineCap = "butt";
+            lampe.lineJoin = "miter";
+            lampe.beginPath();
+            lampe.moveTo(258, 57);
+            lampe.bezierCurveTo(295, 57, 326, 63, 326, 71);
+            lampe.bezierCurveTo(326, 78, 295, 84, 258, 84);
+            lampe.bezierCurveTo(220, 84, 189, 78, 189, 71);
+            lampe.bezierCurveTo(189, 63, 220, 57, 258, 57);
+            lampe.closePath();
+            lampe.stroke();
+            lampe.shadowOffsetX = 15;
+            lampe.shadowOffsetY = 15;
+            lampe.shadowBlur = 0;
+            lampe.shadowColor = "rgba(0,0,0,0)";
+            lampe.fillStyle = "rgba(244,253,3,1)";
+            lampe.fill();
+
+            //Shape2;
+            lampe.shadowColor = "rgba(0,0,0,0)";
+            lampe.strokeStyle = "rgba(0,0,0,1)";
+            lampe.lineWidth = 1;
+            lampe.lineCap = "butt";
+            lampe.lineJoin = "miter";
+            lampe.beginPath();
+            lampe.moveTo(188, 67);
+            lampe.bezierCurveTo(160, 129, 103, 252, 75, 313);
+            lampe.bezierCurveTo(79, 330, 170, 335, 249, 337);
+            lampe.bezierCurveTo(347, 335, 405, 333, 446, 314);
+            lampe.bezierCurveTo(416, 252, 355, 129, 325, 67);
+            lampe.bezierCurveTo(307, 71, 319, 81, 252, 83);
+            lampe.bezierCurveTo(195, 81, 204, 71, 188, 67);
+            lampe.closePath();
+            lampe.stroke();
+            lampe.shadowOffsetX = 15;
+            lampe.shadowOffsetY = 15;
+            lampe.shadowBlur = 0;
+            lampe.shadowColor = "rgba(0,0,0,0)";
+            lampe.fillStyle = "rgba(21,23,0,1)";
+            lampe.fill();
+
+            //Shape3;
+            lampe.shadowColor = "rgba(0,0,0,0)";
+            lampe.strokeStyle = "rgba(254,245,5,1)";
+            lampe.lineWidth = 0;
+            lampe.lineCap = "butt";
+            lampe.lineJoin = "miter";
+            lampe.beginPath();
+            lampe.moveTo(258, 340);
+            lampe.bezierCurveTo(372, 340, 464, 352, 464, 368);
+            lampe.bezierCurveTo(464, 383, 372, 395, 258, 395);
+            lampe.bezierCurveTo(143, 395, 51, 383, 51, 368);
+            lampe.bezierCurveTo(51, 352, 143, 340, 258, 340);
+            lampe.closePath();
+            lampe.stroke();
+            lampe.shadowOffsetX = 15;
+            lampe.shadowOffsetY = 15;
+            lampe.shadowBlur = 42.4;
+            lampe.shadowColor = "rgba(239,248,4,0.81)";
+            lampe.fillStyle = "rgba(242,251,6,0.8)";
+            lampe.fill();
+        }
+    </script>
+</head>
+
+<body onload="setcanvas()">
+    <canvas id="canvasarea" width="500" height="500"></canvas>
+    <a href="../../index.html" class="back_to_index">Revenir à l'index !</a>
+
+</body>
+
+</html>

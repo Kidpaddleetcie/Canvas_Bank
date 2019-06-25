@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Coeur bleu</title>
+    <link rel="stylesheet" href="canvas.css">
+
+    <script type="text/javascript">
+        function setcanvas() {
+            let canvas = document.getElementById("canvasarea");
+            if (canvas.getContext) {
+                let blue_heart = canvas.getContext("2d");
+                drawcanvas(blue_heart);
+            } else {
+                alert("Canvas NOT supported");
+            }
+        }
+
+        function drawcanvas(blue_heart) {
+
+            //Shape0;
+            blue_heart.shadowColor = "rgba(0,0,0,0)";
+            blue_heart.strokeStyle = "rgba(3,41,77,1)";
+            blue_heart.lineWidth = 20;
+            blue_heart.lineCap = "butt";
+            blue_heart.lineJoin = "miter";
+            blue_heart.beginPath();
+            blue_heart.moveTo(56, 51);
+            blue_heart.bezierCurveTo(63, 43, 61, 34, 63, 28);
+            blue_heart.bezierCurveTo(70, 18, 74, 24, 78, 22);
+            blue_heart.bezierCurveTo(76, 18, 89, 21, 87, 30);
+            blue_heart.bezierCurveTo(87, 44, 65, 76, 52, 85);
+            blue_heart.bezierCurveTo(36, 76, 14, 47, 19, 35);
+            blue_heart.bezierCurveTo(13, 20, 25, 17, 35, 23);
+            blue_heart.bezierCurveTo(29, 16, 42, 31, 44, 34);
+            blue_heart.bezierCurveTo(47, 38, 44, 43, 56, 51);
+            blue_heart.closePath();
+            blue_heart.stroke();
+            blue_heart.shadowOffsetX = 15;
+            blue_heart.shadowOffsetY = 15;
+            blue_heart.shadowBlur = 0;
+            blue_heart.shadowColor = "rgba(0,0,0,0)";
+            blue_heart.fillStyle = "rgba(8,152,244,1)";
+            blue_heart.fill();
+        }
+    </script>
+</head>
+
+<body onload="setcanvas()">
+    <canvas id="canvasarea" width="100" height="100"></canvas>
+    <a href="../../index.html" class="back_to_index">Revenir à l'index !</a>
+
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" href="canvas.css">
+
+    <title>Banane</title>
+    <!--[IF LT IE 9]><script type="text/javascript" src = "excanvas.js" ></script><![endif]-->
+    <script type="text/javascript">
+        function setcanvas() {
+            let canvas = document.getElementById("canvasarea");
+            if (canvas.getContext) {
+                let banane = canvas.getContext("2d");
+                drawcanvas(banane);
+            } else {
+                alert("Canvas NOT supported");
+            }
+        }
+
+        function drawcanvas(banane) {
+
+            //Shape1;
+            banane.shadowColor = "rgba(0,0,0,0)";
+            banane.strokeStyle = "rgba(0,0,0,1)";
+            banane.lineWidth = 1;
+            banane.lineCap = "butt";
+            banane.lineJoin = "miter";
+            banane.beginPath();
+            banane.moveTo(54, 44);
+            banane.bezierCurveTo(48, 46, 35, 51, 29, 53);
+            banane.bezierCurveTo(38, 70, 55, 104, 63, 121);
+            banane.bezierCurveTo(-62, 497, 307, 498, 459, 374);
+            banane.bezierCurveTo(179, 407, 117, 295, 86, 110);
+            banane.bezierCurveTo(78, 94, 62, 61, 54, 44);
+            banane.closePath();
+            banane.stroke();
+            banane.shadowOffsetX = 15;
+            banane.shadowOffsetY = 15;
+            banane.shadowBlur = 0;
+            banane.shadowColor = "rgba(0,0,0,0)";
+            grad = banane.createLinearGradient(29, 260, 90, 188);
+            grad.addColorStop(0, "rgba(196,198,0,1)");
+            grad.addColorStop(1, "rgba(247,250,4,1)");
+            banane.fillStyle = grad;
+            banane.fill();
+
+            //Shape2;
+            banane.shadowColor = "rgba(0,0,0,0)";
+            banane.strokeStyle = "rgba(0,0,0,1)";
+            banane.lineWidth = 1;
+            banane.lineCap = "butt";
+            banane.lineJoin = "miter";
+            banane.beginPath();
+            banane.moveTo(60, 121);
+            banane.bezierCurveTo(73, 127, 83, 120, 85, 109);
+            banane.bezierCurveTo(77, 92, 68, 63, 51, 41);
+            banane.bezierCurveTo(44, 37, 33, 41, 25, 53);
+            banane.bezierCurveTo(34, 70, 51, 104, 60, 121);
+            banane.closePath();
+            banane.stroke();
+            banane.shadowOffsetX = 15;
+            banane.shadowOffsetY = 15;
+            banane.shadowBlur = 0;
+            banane.shadowColor = "rgba(0,0,0,0)";
+            grad = banane.createLinearGradient(25, 81, 60, 65);
+            grad.addColorStop(0, "rgba(24,17,0,1)");
+            grad.addColorStop(1, "rgba(61,42,1,1)");
+            banane.fillStyle = grad;
+            banane.fill();
+
+            //Shape3;
+            banane.shadowColor = "rgba(0,0,0,0)";
+            banane.strokeStyle = "rgba(0,0,0,1)";
+            banane.lineWidth = 1;
+            banane.lineCap = "butt";
+            banane.lineJoin = "miter";
+            banane.beginPath();
+            banane.moveTo(464, 371);
+            banane.bezierCurveTo(446, 373, 411, 382, 393, 377);
+            banane.bezierCurveTo(383, 389, 380, 399, 399, 412);
+            banane.bezierCurveTo(423, 410, 448, 381, 464, 371);
+            banane.closePath();
+            banane.stroke();
+            banane.shadowOffsetX = 15;
+            banane.shadowOffsetY = 15;
+            banane.shadowBlur = 0;
+            banane.shadowColor = "rgba(0,0,0,0)";
+            banane.fillStyle = "rgba(17,13,0,1)";
+            banane.fill();
+        }
+    </script>
+</head>
+
+<body onload="setcanvas()">
+    <canvas id="canvasarea" width="500" height="500"></canvas>
+    <a href="../../index.html" class="back_to_index">Revenir à l'index !</a>
+
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Épee</title>
+    <link rel="stylesheet" href="canvas.css">
+
+    <script type="text/javascript">
+        function setcanvas() {
+            let canvas = document.getElementById("canvasarea");
+            if (canvas.getContext) {
+                let epee = canvas.getContext("2d");
+                drawcanvas(epee);
+            } else {
+                alert("Canvas NOT supported");
+            }
+        }
+
+        function drawcanvas(epee) {
+
+            //Shape3;
+            epee.shadowColor = "rgba(0,0,0,0)";
+            epee.strokeStyle = "rgba(0,0,0,1)";
+            epee.lineWidth = 1;
+            epee.lineCap = "butt";
+            epee.lineJoin = "miter";
+            epee.beginPath();
+            epee.moveTo(249, 204);
+            epee.lineTo(353, 278);
+            epee.lineTo(340, 308);
+            epee.lineTo(236, 233);
+            epee.lineTo(249, 204);
+            epee.closePath();
+            epee.stroke();
+            epee.shadowOffsetX = 15;
+            epee.shadowOffsetY = 15;
+            epee.shadowBlur = 0;
+            epee.shadowColor = "rgba(0,0,0,0)";
+            epee.fillStyle = "rgba(100,74,3,1)";
+            epee.fill();
+
+            //Shape0;
+            epee.shadowColor = "rgba(0,0,0,0)";
+            epee.strokeStyle = "rgba(0,0,0,1)";
+            epee.lineWidth = 1;
+            epee.lineCap = "butt";
+            epee.lineJoin = "miter";
+            epee.beginPath();
+            epee.moveTo(NaN, NaN);
+            epee.closePath();
+            epee.stroke();
+            epee.shadowOffsetX = 15;
+            epee.shadowOffsetY = 15;
+            epee.shadowBlur = 0;
+            epee.shadowColor = "rgba(0,0,0,0)";
+            epee.fillStyle = "rgba(255,255,255,1)";
+            epee.fill();
+
+            //Shape1;
+            epee.shadowColor = "rgba(0,0,0,0)";
+            epee.strokeStyle = "rgba(0,0,0,1)";
+            epee.lineWidth = 1;
+            epee.lineCap = "butt";
+            epee.lineJoin = "miter";
+            epee.beginPath();
+            epee.moveTo(7, 41);
+            epee.bezierCurveTo(9, 54, 14, 80, 16, 93);
+            epee.bezierCurveTo(64, 131, 161, 206, 209, 243);
+            epee.bezierCurveTo(220, 228, 243, 196, 254, 180);
+            epee.bezierCurveTo(207, 147, 113, 80, 66, 46);
+            epee.bezierCurveTo(51, 45, 22, 42, 7, 41);
+            epee.closePath();
+            epee.stroke();
+            epee.shadowOffsetX = 15;
+            epee.shadowOffsetY = 15;
+            epee.shadowBlur = 0;
+            epee.shadowColor = "rgba(0,0,0,0)";
+            grad = epee.createLinearGradient(122, 201, 191, 116);
+            grad.addColorStop(0, "rgba(148,146,146,1)");
+            grad.addColorStop(1, "rgba(255,255,255,1)");
+            epee.fillStyle = grad;
+            epee.fill();
+
+            //Shape2;
+            epee.shadowColor = "rgba(0,0,0,0)";
+            epee.strokeStyle = "rgba(0,0,0,1)";
+            epee.lineWidth = 1;
+            epee.lineCap = "butt";
+            epee.lineJoin = "miter";
+            epee.beginPath();
+            epee.moveTo(184, 281);
+            epee.lineTo(281, 146);
+            epee.lineTo(311, 167);
+            epee.lineTo(214, 302);
+            epee.lineTo(184, 281);
+            epee.closePath();
+            epee.stroke();
+            epee.shadowOffsetX = 15;
+            epee.shadowOffsetY = 15;
+            epee.shadowBlur = 0;
+            epee.shadowColor = "rgba(0,0,0,0)";
+            epee.fillStyle = "rgba(104,67,1,1)";
+            epee.fill();
+        }
+    </script>
+</head>
+
+<body onload="setcanvas()">
+    <canvas id="canvasarea" width="360" height="360"></canvas>
+    <a href="../../index.html" class="back_to_index">Revenir à l'index !</a>
+
+</body>
+
+</html>

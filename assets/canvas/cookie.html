@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Cookie Canvas</title>
+    <link rel="stylesheet" href="canvas.css">
+
+    <script type="text/javascript">
+        function setcanvas() {
+            let canvas = document.getElementById("canvasarea");
+            if (canvas.getContext) {
+                let cookie = canvas.getContext("2d");
+                drawcanvas(cookie);
+            } else {
+                alert("Canvas NOT supported");
+            }
+        }
+
+        function drawcanvas(cookie) {
+
+            //Shape0;
+            cookie.shadowColor = "rgba(0,0,0,0)";
+            cookie.strokeStyle = "rgba(0,0,0,1)";
+            cookie.lineWidth = 1;
+            cookie.lineCap = "butt";
+            cookie.lineJoin = "miter";
+            cookie.beginPath();
+            cookie.moveTo(244, 38);
+            cookie.bezierCurveTo(348, 38, 433, 126, 433, 234);
+            cookie.bezierCurveTo(433, 342, 348, 430, 244, 430);
+            cookie.bezierCurveTo(140, 430, 55, 342, 55, 234);
+            cookie.bezierCurveTo(55, 126, 140, 38, 244, 38);
+            cookie.closePath();
+            cookie.stroke();
+            cookie.shadowOffsetX = 15;
+            cookie.shadowOffsetY = 15;
+            cookie.shadowBlur = 0;
+            cookie.shadowColor = "rgba(0,0,0,0)";
+            grad = cookie.createLinearGradient(82, 200, 585, -10);
+            grad.addColorStop(0, "rgba(109,65,9,1)");
+            grad.addColorStop(0.5, "rgba(78,44,2,1)");
+            grad.addColorStop(1, "rgba(109,65,9,1)");
+            cookie.fillStyle = grad;
+            cookie.fill();
+
+            //Shape1;
+            cookie.shadowColor = "rgba(0,0,0,0)";
+            cookie.strokeStyle = "rgba(0,0,0,1)";
+            cookie.lineWidth = 1;
+            cookie.lineCap = "butt";
+            cookie.lineJoin = "miter";
+            cookie.beginPath();
+            cookie.moveTo(183, 62);
+            cookie.bezierCurveTo(205, 62, 223, 81, 223, 104);
+            cookie.bezierCurveTo(223, 127, 205, 146, 183, 146);
+            cookie.bezierCurveTo(160, 146, 142, 127, 142, 104);
+            cookie.bezierCurveTo(142, 81, 160, 62, 183, 62);
+            cookie.closePath();
+            cookie.stroke();
+            cookie.shadowOffsetX = 15;
+            cookie.shadowOffsetY = 15;
+            cookie.shadowBlur = 0;
+            cookie.shadowColor = "rgba(0,0,0,0)";
+            grad = cookie.createRadialGradient(5, 426, 11, 168, 333, 331);
+            grad.addColorStop(0, "rgba(71,46,1,1)");
+            grad.addColorStop(0.5, "rgba(126,83,4,1)");
+            grad.addColorStop(1, "rgba(71,46,1,1)");
+            cookie.fillStyle = grad;
+            cookie.fill();
+
+            //Shape2;
+            cookie.shadowColor = "rgba(0,0,0,0)";
+            cookie.strokeStyle = "rgba(0,0,0,1)";
+            cookie.lineWidth = 1;
+            cookie.lineCap = "butt";
+            cookie.lineJoin = "miter";
+            cookie.beginPath();
+            cookie.moveTo(299, 77);
+            cookie.bezierCurveTo(321, 77, 339, 96, 339, 119);
+            cookie.bezierCurveTo(339, 142, 321, 161, 299, 161);
+            cookie.bezierCurveTo(276, 161, 258, 142, 258, 119);
+            cookie.bezierCurveTo(258, 96, 276, 77, 299, 77);
+            cookie.closePath();
+            cookie.stroke();
+            cookie.shadowOffsetX = 15;
+            cookie.shadowOffsetY = 15;
+            cookie.shadowBlur = 0;
+            cookie.shadowColor = "rgba(0,0,0,0)";
+            grad = cookie.createRadialGradient(5, 426, 11, 168, 333, 331);
+            grad.addColorStop(0, "rgba(71,46,1,1)");
+            grad.addColorStop(0.5, "rgba(126,83,4,1)");
+            grad.addColorStop(1, "rgba(71,46,1,1)");
+            cookie.fillStyle = grad;
+            cookie.fill();
+
+            //Shape3;
+            cookie.shadowColor = "rgba(0,0,0,0)";
+            cookie.strokeStyle = "rgba(0,0,0,1)";
+            cookie.lineWidth = 1;
+            cookie.lineCap = "butt";
+            cookie.lineJoin = "miter";
+            cookie.beginPath();
+            cookie.moveTo(117, 173);
+            cookie.bezierCurveTo(139, 173, 157, 192, 157, 215);
+            cookie.bezierCurveTo(157, 238, 139, 257, 117, 257);
+            cookie.bezierCurveTo(94, 257, 76, 238, 76, 215);
+            cookie.bezierCurveTo(76, 192, 94, 173, 117, 173);
+            cookie.closePath();
+            cookie.stroke();
+            cookie.shadowOffsetX = 15;
+            cookie.shadowOffsetY = 15;
+            cookie.shadowBlur = 0;
+            cookie.shadowColor = "rgba(0,0,0,0)";
+            grad = cookie.createRadialGradient(5, 426, 11, 168, 333, 331);
+            grad.addColorStop(0, "rgba(71,46,1,1)");
+            grad.addColorStop(0.5, "rgba(126,83,4,1)");
+            grad.addColorStop(1, "rgba(71,46,1,1)");
+            cookie.fillStyle = grad;
+            cookie.fill();
+
+            //Shape4;
+            cookie.shadowColor = "rgba(0,0,0,0)";
+            cookie.strokeStyle = "rgba(0,0,0,1)";
+            cookie.lineWidth = 1;
+            cookie.lineCap = "butt";
+            cookie.lineJoin = "miter";
+            cookie.beginPath();
+            cookie.moveTo(171, 291);
+            cookie.bezierCurveTo(193, 291, 211, 310, 211, 333);
+            cookie.bezierCurveTo(211, 356, 193, 375, 171, 375);
+            cookie.bezierCurveTo(148, 375, 130, 356, 130, 333);
+            cookie.bezierCurveTo(130, 310, 148, 291, 171, 291);
+            cookie.closePath();
+            cookie.stroke();
+            cookie.shadowOffsetX = 15;
+            cookie.shadowOffsetY = 15;
+            cookie.shadowBlur = 0;
+            cookie.shadowColor = "rgba(0,0,0,0)";
+            grad = cookie.createRadialGradient(5, 426, 11, 168, 333, 331);
+            grad.addColorStop(0, "rgba(71,46,1,1)");
+            grad.addColorStop(0.5, "rgba(126,83,4,1)");
+            grad.addColorStop(1, "rgba(71,46,1,1)");
+            cookie.fillStyle = grad;
+            cookie.fill();
+
+            //Shape5;
+            cookie.shadowColor = "rgba(0,0,0,0)";
+            cookie.strokeStyle = "rgba(0,0,0,1)";
+            cookie.lineWidth = 1;
+            cookie.lineCap = "butt";
+            cookie.lineJoin = "miter";
+            cookie.beginPath();
+            cookie.moveTo(240, 183);
+            cookie.bezierCurveTo(262, 183, 280, 202, 280, 225);
+            cookie.bezierCurveTo(280, 248, 262, 267, 240, 267);
+            cookie.bezierCurveTo(217, 267, 199, 248, 199, 225);
+            cookie.bezierCurveTo(199, 202, 217, 183, 240, 183);
+            cookie.closePath();
+            cookie.stroke();
+            cookie.shadowOffsetX = 15;
+            cookie.shadowOffsetY = 15;
+            cookie.shadowBlur = 0;
+            cookie.shadowColor = "rgba(0,0,0,0)";
+            grad = cookie.createRadialGradient(5, 426, 11, 168, 333, 331);
+            grad.addColorStop(0, "rgba(71,46,1,1)");
+            grad.addColorStop(0.5, "rgba(126,83,4,1)");
+            grad.addColorStop(1, "rgba(71,46,1,1)");
+            cookie.fillStyle = grad;
+            cookie.fill();
+
+            //Shape6;
+            cookie.shadowColor = "rgba(0,0,0,0)";
+            cookie.strokeStyle = "rgba(0,0,0,1)";
+            cookie.lineWidth = 1;
+            cookie.lineCap = "butt";
+            cookie.lineJoin = "miter";
+            cookie.beginPath();
+            cookie.moveTo(372, 211);
+            cookie.bezierCurveTo(394, 211, 412, 230, 412, 253);
+            cookie.bezierCurveTo(412, 276, 394, 295, 372, 295);
+            cookie.bezierCurveTo(349, 295, 331, 276, 331, 253);
+            cookie.bezierCurveTo(331, 230, 349, 211, 372, 211);
+            cookie.closePath();
+            cookie.stroke();
+            cookie.shadowOffsetX = 15;
+            cookie.shadowOffsetY = 15;
+            cookie.shadowBlur = 0;
+            cookie.shadowColor = "rgba(0,0,0,0)";
+            grad = cookie.createRadialGradient(5, 426, 11, 168, 333, 331);
+            grad.addColorStop(0, "rgba(71,46,1,1)");
+            grad.addColorStop(0.5, "rgba(126,83,4,1)");
+            grad.addColorStop(1, "rgba(71,46,1,1)");
+            cookie.fillStyle = grad;
+            cookie.fill();
+
+            //Shape7;
+            cookie.shadowColor = "rgba(0,0,0,0)";
+            cookie.strokeStyle = "rgba(0,0,0,1)";
+            cookie.lineWidth = 1;
+            cookie.lineCap = "butt";
+            cookie.lineJoin = "miter";
+            cookie.beginPath();
+            cookie.moveTo(306, 303);
+            cookie.bezierCurveTo(328, 303, 346, 322, 346, 345);
+            cookie.bezierCurveTo(346, 368, 328, 387, 306, 387);
+            cookie.bezierCurveTo(283, 387, 265, 368, 265, 345);
+            cookie.bezierCurveTo(265, 322, 283, 303, 306, 303);
+            cookie.closePath();
+            cookie.stroke();
+            cookie.shadowOffsetX = 15;
+            cookie.shadowOffsetY = 15;
+            cookie.shadowBlur = 0;
+            cookie.shadowColor = "rgba(0,0,0,0)";
+            grad = cookie.createRadialGradient(5, 426, 11, 168, 333, 331);
+            grad.addColorStop(0, "rgba(71,46,1,1)");
+            grad.addColorStop(0.5, "rgba(126,83,4,1)");
+            grad.addColorStop(1, "rgba(71,46,1,1)");
+            cookie.fillStyle = grad;
+            cookie.fill();
+        }
+    </script>
+</head>
+
+<body onload="setcanvas()">
+    <canvas id="canvasarea" width="500" height="500"></canvas>
+    <a href="../../index.html" class="back_to_index">Revenir à l'index !</a>
+
+</body>

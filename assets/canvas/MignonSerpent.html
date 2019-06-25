@@ -1,0 +1,263 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Mignon Serpent</title>
+    <link rel="stylesheet" href="canvas.css">
+    <!--[IF LT IE 9]><script type="text/javascript" src = "excanvas.js" ></script><![endif]-->
+    <script type="text/javascript">
+        function setcanvas() {
+            let canvas = document.getElementById("mignon_serpent");
+            if (canvas.getContext) {
+                let MS = canvas.getContext("2d");
+                drawcanvas(MS);
+            } else {
+                alert("Canvas NOT supported");
+            }
+        }
+
+        function drawcanvas(MS) {
+
+            //Shape12;
+            MS.shadowColor = "rgba(0,0,0,0)";
+            MS.strokeStyle = "rgba(0,0,0,1)";
+            MS.lineWidth = 1;
+            MS.lineCap = "butt";
+            MS.lineJoin = "miter";
+            MS.beginPath();
+            MS.moveTo(290, 295);
+            MS.bezierCurveTo(358, 295, 414, 312, 414, 333);
+            MS.bezierCurveTo(414, 354, 358, 371, 290, 371);
+            MS.bezierCurveTo(222, 371, 166, 354, 166, 333);
+            MS.bezierCurveTo(166, 312, 222, 295, 290, 295);
+            MS.closePath();
+            MS.stroke();
+            MS.shadowOffsetX = 15;
+            MS.shadowOffsetY = 15;
+            MS.shadowBlur = 0;
+            MS.shadowColor = "rgba(0,0,0,0)";
+            grad = MS.createRadialGradient(202, 313, 31, 227, 328, 124);
+            grad.addColorStop(0, "rgba(122,9,9,1)");
+            grad.addColorStop(1, "rgba(242,9,9,1)");
+            MS.fillStyle = grad;
+            MS.fill();
+
+            //Shape3;
+            MS.shadowColor = "rgba(0,0,0,0)";
+            MS.strokeStyle = "rgba(0,0,0,1)";
+            MS.lineWidth = 1;
+            MS.lineCap = "butt";
+            MS.lineJoin = "miter";
+            MS.beginPath();
+            MS.moveTo(353, 90);
+            MS.bezierCurveTo(372, 90, 388, 107, 388, 127);
+            MS.bezierCurveTo(388, 147, 372, 164, 353, 164);
+            MS.bezierCurveTo(333, 164, 317, 147, 317, 127);
+            MS.bezierCurveTo(317, 107, 333, 90, 353, 90);
+            MS.closePath();
+            MS.stroke();
+            MS.shadowOffsetX = 15;
+            MS.shadowOffsetY = 15;
+            MS.shadowBlur = 0;
+            MS.shadowColor = "rgba(0,0,0,0)";
+            MS.fillStyle = "rgba(255,255,255,1)";
+            MS.fill();
+
+            //Shape0;
+            MS.shadowColor = "rgba(0,0,0,0)";
+            MS.strokeStyle = "rgba(0,0,0,1)";
+            MS.lineWidth = 1;
+            MS.lineCap = "butt";
+            MS.lineJoin = "miter";
+            MS.beginPath();
+            MS.moveTo(NaN, NaN);
+            MS.closePath();
+            MS.stroke();
+            MS.shadowOffsetX = 15;
+            MS.shadowOffsetY = 15;
+            MS.shadowBlur = 0;
+            MS.shadowColor = "rgba(0,0,0,0)";
+            MS.fillStyle = "rgba(255,255,255,1)";
+            MS.fill();
+
+            //Shape1;
+            MS.shadowColor = "rgba(0,0,0,0)";
+            MS.strokeStyle = "rgba(0,0,0,1)";
+            MS.lineWidth = 1;
+            MS.lineCap = "butt";
+            MS.lineJoin = "miter";
+            MS.beginPath();
+            MS.moveTo(86, 286);
+            MS.bezierCurveTo(58, 311, 33, 359, 81, 384);
+            MS.bezierCurveTo(171, 368, 416, 442, 441, 320);
+            MS.bezierCurveTo(-72, 366, 399, 207, 383, 168);
+            MS.bezierCurveTo(275, 46, 160, 257, 86, 286);
+            MS.closePath();
+            MS.stroke();
+            MS.shadowOffsetX = 15;
+            MS.shadowOffsetY = 15;
+            MS.shadowBlur = 0;
+            MS.shadowColor = "rgba(0,0,0,0)";
+            grad = MS.createLinearGradient(50, 309, 441, 261);
+            grad.addColorStop(0, "rgba(10,61,2,1)");
+            grad.addColorStop(1, "rgba(15,116,1,1)");
+            MS.fillStyle = grad;
+            MS.fill();
+
+            //Shape2;
+            MS.shadowColor = "rgba(0,0,0,0)";
+            MS.strokeStyle = "rgba(0,0,0,1)";
+            MS.lineWidth = 1;
+            MS.lineCap = "butt";
+            MS.lineJoin = "miter";
+            MS.beginPath();
+            MS.moveTo(278, 111);
+            MS.bezierCurveTo(297, 111, 313, 128, 313, 148);
+            MS.bezierCurveTo(313, 168, 297, 185, 278, 185);
+            MS.bezierCurveTo(258, 185, 242, 168, 242, 148);
+            MS.bezierCurveTo(242, 128, 258, 111, 278, 111);
+            MS.closePath();
+            MS.stroke();
+            MS.shadowOffsetX = 15;
+            MS.shadowOffsetY = 15;
+            MS.shadowBlur = 0;
+            MS.shadowColor = "rgba(0,0,0,0)";
+            MS.fillStyle = "rgba(255,255,255,1)";
+            MS.fill();
+
+            //Shape6;
+            MS.shadowColor = "rgba(0,0,0,0)";
+            MS.strokeStyle = "rgba(0,0,0,1)";
+            MS.lineWidth = 1;
+            MS.lineCap = "butt";
+            MS.lineJoin = "miter";
+            MS.beginPath();
+            MS.moveTo(282, 115);
+            MS.bezierCurveTo(289, 115, 294, 121, 294, 128);
+            MS.bezierCurveTo(294, 134, 289, 140, 282, 140);
+            MS.bezierCurveTo(275, 140, 270, 134, 270, 128);
+            MS.bezierCurveTo(270, 121, 275, 115, 282, 115);
+            MS.closePath();
+            MS.stroke();
+            MS.shadowOffsetX = 15;
+            MS.shadowOffsetY = 15;
+            MS.shadowBlur = 0;
+            MS.shadowColor = "rgba(0,0,0,0)";
+            MS.fillStyle = "rgba(1,0,0,1)";
+            MS.fill();
+
+            //Shape7;
+            MS.shadowColor = "rgba(0,0,0,0)";
+            MS.strokeStyle = "rgba(0,0,0,1)";
+            MS.lineWidth = 1;
+            MS.lineCap = "butt";
+            MS.lineJoin = "miter";
+            MS.beginPath();
+            MS.moveTo(354, 95);
+            MS.bezierCurveTo(361, 95, 366, 101, 366, 108);
+            MS.bezierCurveTo(366, 114, 361, 120, 354, 120);
+            MS.bezierCurveTo(347, 120, 342, 114, 342, 108);
+            MS.bezierCurveTo(342, 101, 347, 95, 354, 95);
+            MS.closePath();
+            MS.stroke();
+            MS.shadowOffsetX = 15;
+            MS.shadowOffsetY = 15;
+            MS.shadowBlur = 0;
+            MS.shadowColor = "rgba(0,0,0,0)";
+            MS.fillStyle = "rgba(1,0,0,1)";
+            MS.fill();
+
+            //Shape8;
+            MS.shadowColor = "rgba(0,0,0,0)";
+            MS.strokeStyle = "rgba(0,0,0,1)";
+            MS.lineWidth = 1;
+            MS.lineCap = "butt";
+            MS.lineJoin = "miter";
+            MS.beginPath();
+            MS.moveTo(283, 125);
+            MS.bezierCurveTo(285, 125, 287, 127, 287, 130);
+            MS.bezierCurveTo(287, 132, 285, 134, 283, 134);
+            MS.bezierCurveTo(281, 134, 279, 132, 279, 130);
+            MS.bezierCurveTo(279, 127, 281, 125, 283, 125);
+            MS.closePath();
+            MS.stroke();
+            MS.shadowOffsetX = 15;
+            MS.shadowOffsetY = 15;
+            MS.shadowBlur = 0;
+            MS.shadowColor = "rgba(0,0,0,0)";
+            MS.fillStyle = "rgba(255,255,255,1)";
+            MS.fill();
+
+            //Shape9;
+            MS.shadowColor = "rgba(0,0,0,0)";
+            MS.strokeStyle = "rgba(0,0,0,1)";
+            MS.lineWidth = 1;
+            MS.lineCap = "butt";
+            MS.lineJoin = "miter";
+            MS.beginPath();
+            MS.moveTo(275, 111);
+            MS.bezierCurveTo(279, 111, 282, 115, 282, 120);
+            MS.bezierCurveTo(282, 124, 279, 128, 275, 128);
+            MS.bezierCurveTo(270, 128, 267, 124, 267, 120);
+            MS.bezierCurveTo(267, 115, 270, 111, 275, 111);
+            MS.closePath();
+            MS.stroke();
+            MS.shadowOffsetX = 15;
+            MS.shadowOffsetY = 15;
+            MS.shadowBlur = 0;
+            MS.shadowColor = "rgba(0,0,0,0)";
+            MS.fillStyle = "rgba(255,255,255,1)";
+            MS.fill();
+
+            //Shape10;
+            MS.shadowColor = "rgba(0,0,0,0)";
+            MS.strokeStyle = "rgba(0,0,0,1)";
+            MS.lineWidth = 1;
+            MS.lineCap = "butt";
+            MS.lineJoin = "miter";
+            MS.beginPath();
+            MS.moveTo(357, 105);
+            MS.bezierCurveTo(359, 105, 361, 107, 361, 110);
+            MS.bezierCurveTo(361, 112, 359, 114, 357, 114);
+            MS.bezierCurveTo(355, 114, 353, 112, 353, 110);
+            MS.bezierCurveTo(353, 107, 355, 105, 357, 105);
+            MS.closePath();
+            MS.stroke();
+            MS.shadowOffsetX = 15;
+            MS.shadowOffsetY = 15;
+            MS.shadowBlur = 0;
+            MS.shadowColor = "rgba(0,0,0,0)";
+            MS.fillStyle = "rgba(255,255,255,1)";
+            MS.fill();
+
+            //Shape11;
+            MS.shadowColor = "rgba(0,0,0,0)";
+            MS.strokeStyle = "rgba(0,0,0,1)";
+            MS.lineWidth = 1;
+            MS.lineCap = "butt";
+            MS.lineJoin = "miter";
+            MS.beginPath();
+            MS.moveTo(349, 91);
+            MS.bezierCurveTo(353, 91, 356, 95, 356, 100);
+            MS.bezierCurveTo(356, 104, 353, 108, 349, 108);
+            MS.bezierCurveTo(344, 108, 341, 104, 341, 100);
+            MS.bezierCurveTo(341, 95, 344, 91, 349, 91);
+            MS.closePath();
+            MS.stroke();
+            MS.shadowOffsetX = 15;
+            MS.shadowOffsetY = 15;
+            MS.shadowBlur = 0;
+            MS.shadowColor = "rgba(0,0,0,0)";
+            MS.fillStyle = "rgba(255,255,255,1)";
+            MS.fill();
+        }
+    </script>
+</head>
+
+<body onload="setcanvas()">
+    <canvas id="mignon_serpent" width="500" height="500"></canvas>
+    <a href="../../index.html" class="back_to_index">Revenir à l'index !</a>
+
+</body>
+
+</html>

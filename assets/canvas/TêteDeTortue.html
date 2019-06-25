@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Tête de tortue</title>
+    <link rel="stylesheet" href="canvas.css">
+
+    <!--[IF LT IE 9]><script type="text/javascript" src = "excanvas.js" ></script><![endif]-->
+    <script type="text/javascript">
+        function setcanvas() {
+            let canvas = document.getElementById("canvasarea");
+            if (canvas.getContext) {
+                let tortue = canvas.getContext("2d");
+                drawcanvas(tortue);
+            } else {
+                alert("Canvas NOT supported");
+            }
+        }
+
+        function drawcanvas(tortue) {
+
+            //Shape4;
+            tortue.shadowColor = "rgba(0,0,0,0)";
+            tortue.strokeStyle = "rgba(0,0,0,0.9299999999999999)";
+            tortue.lineWidth = 1;
+            tortue.lineCap = "butt";
+            tortue.lineJoin = "miter";
+            tortue.beginPath();
+            tortue.moveTo(427, 86);
+            tortue.bezierCurveTo(446, 86, 461, 101, 461, 121);
+            tortue.bezierCurveTo(461, 140, 446, 155, 427, 155);
+            tortue.bezierCurveTo(408, 155, 393, 140, 393, 121);
+            tortue.bezierCurveTo(393, 101, 408, 86, 427, 86);
+            tortue.closePath();
+            tortue.stroke();
+            tortue.shadowOffsetX = 15;
+            tortue.shadowOffsetY = 15;
+            tortue.shadowBlur = 0;
+            tortue.shadowColor = "rgba(0,0,0,0)";
+            tortue.fillStyle = "rgba(245,253,246,1)";
+            tortue.fill();
+
+            //Shape2;
+            tortue.shadowColor = "rgba(0,0,0,0)";
+            tortue.strokeStyle = "rgba(0,0,0,0)";
+            tortue.lineWidth = 1;
+            tortue.lineCap = "butt";
+            tortue.lineJoin = "miter";
+            tortue.beginPath();
+            tortue.moveTo(390, 239);
+            tortue.bezierCurveTo(434, 247, 469, 267, 466, 284);
+            tortue.bezierCurveTo(464, 301, 426, 308, 382, 300);
+            tortue.bezierCurveTo(337, 292, 303, 272, 305, 255);
+            tortue.bezierCurveTo(308, 238, 346, 231, 390, 239);
+            tortue.closePath();
+            tortue.stroke();
+            tortue.shadowOffsetX = 15;
+            tortue.shadowOffsetY = 15;
+            tortue.shadowBlur = 0;
+            tortue.shadowColor = "rgba(0,0,0,0)";
+            tortue.fillStyle = "rgba(254,61,2,1)";
+            tortue.fill();
+
+            //Shape0;
+            tortue.shadowColor = "rgba(0,0,0,0)";
+            tortue.strokeStyle = "rgba(0,0,0,0)";
+            tortue.lineWidth = 1;
+            tortue.lineCap = "butt";
+            tortue.lineJoin = "miter";
+            tortue.beginPath();
+            tortue.moveTo(239, 378);
+            tortue.bezierCurveTo(42, 380, 38, 387, 35, 299);
+            tortue.bezierCurveTo(37, 157, 26, 149, 244, 209);
+            tortue.bezierCurveTo(302, 227, 420, 263, 479, 281);
+            tortue.bezierCurveTo(419, 305, 474, 375, 239, 378);
+            tortue.closePath();
+            tortue.stroke();
+            tortue.shadowOffsetX = 15;
+            tortue.shadowOffsetY = -15;
+            tortue.shadowBlur = 0;
+            tortue.shadowColor = "rgba(0,0,0,0)";
+            grad = tortue.createRadialGradient(87, 211, 297, 481, 15, 209);
+            grad.addColorStop(0, "rgba(7,0,0,1)");
+            grad.addColorStop(1, "rgba(2,254,38,1)");
+            tortue.fillStyle = grad;
+            tortue.fill();
+
+            //Shape1;
+            tortue.shadowColor = "rgba(0,0,0,0)";
+            tortue.strokeStyle = "rgba(0,0,0,0)";
+            tortue.lineWidth = 1;
+            tortue.lineCap = "butt";
+            tortue.lineJoin = "miter";
+            tortue.beginPath();
+            tortue.moveTo(240, 95);
+            tortue.bezierCurveTo(44, 92, 39, 84, 36, 178);
+            tortue.bezierCurveTo(38, 329, 28, 338, 245, 273);
+            tortue.bezierCurveTo(304, 254, 421, 216, 480, 197);
+            tortue.bezierCurveTo(420, 172, 475, 97, 240, 95);
+            tortue.closePath();
+            tortue.stroke();
+            tortue.shadowOffsetX = 15;
+            tortue.shadowOffsetY = 15;
+            tortue.shadowBlur = 0;
+            tortue.shadowColor = "rgba(0,0,0,0)";
+            grad = tortue.createRadialGradient(87, 211, 297, 481, 15, 209);
+            grad.addColorStop(0, "rgba(7,0,0,1)");
+            grad.addColorStop(1, "rgba(2,254,38,1)");
+            tortue.fillStyle = grad;
+            tortue.fill();
+
+            //Shape3;
+            tortue.shadowColor = "rgba(0,0,0,0)";
+            tortue.strokeStyle = "rgba(0,0,0,0.94)";
+            tortue.lineWidth = 1;
+            tortue.lineCap = "butt";
+            tortue.lineJoin = "miter";
+            tortue.beginPath();
+            tortue.moveTo(379, 88);
+            tortue.bezierCurveTo(398, 88, 413, 104, 413, 123);
+            tortue.bezierCurveTo(413, 142, 398, 157, 379, 157);
+            tortue.bezierCurveTo(360, 157, 345, 142, 345, 123);
+            tortue.bezierCurveTo(345, 104, 360, 88, 379, 88);
+            tortue.closePath();
+            tortue.stroke();
+            tortue.shadowOffsetX = 15;
+            tortue.shadowOffsetY = 15;
+            tortue.shadowBlur = 0;
+            tortue.shadowColor = "rgba(0,0,0,0)";
+            tortue.fillStyle = "rgba(255,255,255,1)";
+            tortue.fill();
+
+            //Shape5;
+            tortue.shadowColor = "rgba(0,0,0,0)";
+            tortue.strokeStyle = "rgba(0,0,0,0)";
+            tortue.lineWidth = 1;
+            tortue.lineCap = "butt";
+            tortue.lineJoin = "miter";
+            tortue.beginPath();
+            tortue.moveTo(366, 99);
+            tortue.bezierCurveTo(375, 99, 383, 107, 383, 117);
+            tortue.bezierCurveTo(383, 126, 375, 134, 366, 134);
+            tortue.bezierCurveTo(357, 134, 349, 126, 349, 117);
+            tortue.bezierCurveTo(349, 107, 357, 99, 366, 99);
+            tortue.closePath();
+            tortue.stroke();
+            tortue.shadowOffsetX = 15;
+            tortue.shadowOffsetY = 15;
+            tortue.shadowBlur = 0;
+            tortue.shadowColor = "rgba(0,0,0,0)";
+            tortue.fillStyle = "rgba(0,3,0,1)";
+            tortue.fill();
+
+            //Shape6;
+            tortue.shadowColor = "rgba(0,0,0,0)";
+            tortue.strokeStyle = "rgba(0,0,0,0)";
+            tortue.lineWidth = 1;
+            tortue.lineCap = "butt";
+            tortue.lineJoin = "miter";
+            tortue.beginPath();
+            tortue.moveTo(442, 92);
+            tortue.bezierCurveTo(451, 92, 459, 100, 459, 109);
+            tortue.bezierCurveTo(459, 119, 451, 127, 442, 127);
+            tortue.bezierCurveTo(432, 127, 425, 119, 425, 109);
+            tortue.bezierCurveTo(425, 100, 432, 92, 442, 92);
+            tortue.closePath();
+            tortue.stroke();
+            tortue.shadowOffsetX = 15;
+            tortue.shadowOffsetY = 15;
+            tortue.shadowBlur = 0;
+            tortue.shadowColor = "rgba(0,0,0,0)";
+            tortue.fillStyle = "rgba(0,3,0,1)";
+            tortue.fill();
+        }
+    </script>
+</head>
+
+<body onload="setcanvas()">
+    <canvas id="canvasarea" width="500" height="500"></canvas>
+    <a href="../../index.html" class="back_to_index">Revenir à l'index !</a>
+
+</body>
+
+</html>

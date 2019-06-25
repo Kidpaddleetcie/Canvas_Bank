@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Saucisse</title>
+    <link rel="stylesheet" href="canvas.css">
+
+    <!--[IF LT IE 9]><script type="text/javascript" src = "excanvas.js" ></script><![endif]-->
+    <script type="text/javascript">
+        function setcanvas() {
+            let canvas = document.getElementById("canvasarea");
+            if (canvas.getContext) {
+                let saucisse = canvas.getContext("2d");
+                drawcanvas(saucisse);
+            } else {
+                alert("Canvas NOT supported");
+            }
+        }
+
+        function drawcanvas(saucisse) {
+
+            //Shape2;
+            saucisse.shadowColor = "rgba(0,0,0,0)";
+            saucisse.strokeStyle = "rgba(0,0,0,1)";
+            saucisse.lineWidth = 1;
+            saucisse.lineCap = "butt";
+            saucisse.lineJoin = "miter";
+            saucisse.beginPath();
+            saucisse.moveTo(546, 217);
+            saucisse.lineTo(110, 217);
+            saucisse.bezierCurveTo(87, 217, 69, 199, 69, 176);
+            saucisse.lineTo(69, 192);
+            saucisse.bezierCurveTo(69, 169, 87, 151, 110, 151);
+            saucisse.lineTo(546, 151);
+            saucisse.bezierCurveTo(569, 151, 587, 169, 587, 192);
+            saucisse.lineTo(587, 176);
+            saucisse.bezierCurveTo(587, 199, 569, 217, 546, 217);
+            saucisse.closePath();
+            saucisse.stroke();
+            saucisse.shadowOffsetX = -15;
+            saucisse.shadowOffsetY = -15;
+            saucisse.shadowBlur = 0;
+            saucisse.shadowColor = "rgba(0,0,0,0)";
+            grad = saucisse.createLinearGradient(334, 151, 331, 220);
+            grad.addColorStop(0, "rgba(159,10,10,1)");
+            grad.addColorStop(1, "rgba(111,7,7,1)");
+            saucisse.fillStyle = grad;
+            saucisse.fill();
+
+            //Shape7;
+            saucisse.shadowColor = "rgba(0,0,0,0)";
+            saucisse.strokeStyle = "rgba(0,0,0,1)";
+            saucisse.lineWidth = 1;
+            saucisse.lineCap = "butt";
+            saucisse.lineJoin = "miter";
+            saucisse.beginPath();
+            saucisse.moveTo(71, 177);
+            saucisse.bezierCurveTo(73, 171, 67, 158, 50, 156);
+            saucisse.bezierCurveTo(42, 154, 67, 163, 55, 175);
+            saucisse.bezierCurveTo(69, 194, 43, 197, 55, 196);
+            saucisse.bezierCurveTo(65, 196, 81, 195, 71, 177);
+            saucisse.closePath();
+            saucisse.stroke();
+            saucisse.shadowOffsetX = 15;
+            saucisse.shadowOffsetY = 15;
+            saucisse.shadowBlur = 0;
+            saucisse.shadowColor = "rgba(0,0,0,0)";
+            grad = saucisse.createLinearGradient(56, 190, 74, 176);
+            grad.addColorStop(0, "rgba(124,4,4,1)");
+            grad.addColorStop(1, "rgba(89,3,3,1)");
+            saucisse.fillStyle = grad;
+            saucisse.fill();
+
+            //Shape8;
+            saucisse.shadowColor = "rgba(0,0,0,0)";
+            saucisse.strokeStyle = "rgba(0,0,0,1)";
+            saucisse.lineWidth = 1;
+            saucisse.lineCap = "butt";
+            saucisse.lineJoin = "miter";
+            saucisse.beginPath();
+            saucisse.moveTo(585, 182);
+            saucisse.bezierCurveTo(583, 188, 589, 201, 606, 203);
+            saucisse.bezierCurveTo(614, 205, 589, 196, 601, 184);
+            saucisse.bezierCurveTo(587, 165, 613, 162, 601, 163);
+            saucisse.bezierCurveTo(591, 163, 575, 164, 585, 182);
+            saucisse.closePath();
+            saucisse.stroke();
+            saucisse.shadowOffsetX = -15;
+            saucisse.shadowOffsetY = -15;
+            saucisse.shadowBlur = 0;
+            saucisse.shadowColor = "rgba(0,0,0,0)";
+            grad = saucisse.createLinearGradient(600, 169, 582, 183);
+            grad.addColorStop(0, "rgba(124,4,4,1)");
+            grad.addColorStop(1, "rgba(89,3,3,1)");
+            saucisse.fillStyle = grad;
+            saucisse.fill();
+
+            //Shape9;
+            saucisse.shadowColor = "rgba(0,0,0,0)";
+            saucisse.strokeStyle = "rgba(0,0,0,1)";
+            saucisse.lineWidth = 1;
+            saucisse.lineCap = "butt";
+            saucisse.lineJoin = "miter";
+            saucisse.beginPath();
+            saucisse.moveTo(-181, 29);
+            saucisse.lineTo(-181, 29);
+            saucisse.lineTo(-181, 29);
+            saucisse.lineTo(-181, 29);
+            saucisse.lineTo(-181, 29);
+            saucisse.lineTo(-181, 29);
+            saucisse.lineTo(-181, 29);
+            saucisse.lineTo(-181, 29);
+            saucisse.lineTo(-181, 29);
+            saucisse.closePath();
+            saucisse.stroke();
+            saucisse.shadowOffsetX = 15;
+            saucisse.shadowOffsetY = 15;
+            saucisse.shadowBlur = 0;
+            saucisse.shadowColor = "rgba(0,0,0,0)";
+            saucisse.fillStyle = "rgba(255,255,255,1)";
+            saucisse.fill();
+
+            //Shape10;
+            saucisse.shadowColor = "rgba(0,0,0,0)";
+            saucisse.strokeStyle = "rgba(0,0,0,0)";
+            saucisse.lineWidth = 1;
+            saucisse.lineCap = "butt";
+            saucisse.lineJoin = "miter";
+            saucisse.beginPath();
+            saucisse.moveTo(98, 155);
+            saucisse.lineTo(555, 155);
+            saucisse.bezierCurveTo(561, 155, 565, 159, 565, 165);
+            saucisse.lineTo(565, 165);
+            saucisse.bezierCurveTo(565, 171, 561, 175, 555, 175);
+            saucisse.lineTo(98, 175);
+            saucisse.bezierCurveTo(92, 175, 88, 171, 88, 165);
+            saucisse.lineTo(88, 165);
+            saucisse.bezierCurveTo(88, 159, 92, 155, 98, 155);
+            saucisse.closePath();
+            saucisse.stroke();
+            saucisse.shadowOffsetX = 15;
+            saucisse.shadowOffsetY = -10;
+            saucisse.shadowBlur = 27.4;
+            saucisse.shadowColor = "rgba(252,251,251,1)";
+            saucisse.fillStyle = "rgba(255,255,255,0.31000000000000005)";
+            saucisse.fill();
+        }
+    </script>
+</head>
+
+<body onload="setcanvas()">
+    <canvas id="canvasarea" width="640" height="360"></canvas>
+    <a href="../../index.html" class="back_to_index">Revenir à l'index !</a>
+
+</body>
+
+</html>

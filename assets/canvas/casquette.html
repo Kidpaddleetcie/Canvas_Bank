@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Casquette</title>
+
+    <link rel="stylesheet" href="canvas.css">
+    <!--[IF LT IE 9]><script type="text/javascript" src = "excanvas.js" ></script><![endif]-->
+    <script type="text/javascript">
+        function setcanvas() {
+            let cap = document.getElementById("casquette");
+            if (cap.getContext) {
+                let casquette = cap.getContext("2d");
+                drawcanvas(casquette);
+            } else {
+                alert("Canvas NOT supported");
+            }
+        }
+
+        function drawcanvas(casquette) {
+
+            //Shape0;
+            casquette.shadowColor = "rgba(0,0,0,0)";
+            casquette.strokeStyle = "rgba(0,0,0,1)";
+            casquette.lineWidth = 1;
+            casquette.lineCap = "butt";
+            casquette.lineJoin = "miter";
+            casquette.beginPath();
+            casquette.moveTo(99, 261);
+            casquette.bezierCurveTo(66, 219, 57, 146, 74, 67);
+            casquette.bezierCurveTo(113, 22, 172, 16, 247, 28);
+            casquette.bezierCurveTo(316, 18, 418, 17, 441, 72);
+            casquette.bezierCurveTo(460, 124, 451, 215, 417, 262);
+            casquette.bezierCurveTo(379, 256, 316, 260, 262, 238);
+            casquette.bezierCurveTo(221, 262, 140, 256, 99, 261);
+            casquette.closePath();
+            casquette.stroke();
+            casquette.shadowOffsetX = 15;
+            casquette.shadowOffsetY = 15;
+            casquette.shadowBlur = 0;
+            casquette.shadowColor = "rgba(0,0,0,0)";
+            casquette.fillStyle = "rgba(3,139,254,1)";
+            casquette.fill();
+
+            //Shape1;
+            casquette.shadowColor = "rgba(0,0,0,0)";
+            casquette.strokeStyle = "rgba(0,0,0,1)";
+            casquette.lineWidth = 1;
+            casquette.lineCap = "butt";
+            casquette.lineJoin = "miter";
+            casquette.beginPath();
+            casquette.moveTo(85, 240);
+            casquette.bezierCurveTo(133, 224, 206, 205, 256, 210);
+            casquette.bezierCurveTo(324, 209, 388, 220, 432, 238);
+            casquette.bezierCurveTo(445, 260, 470, 304, 482, 326);
+            casquette.bezierCurveTo(437, 346, 346, 365, 285, 364);
+            casquette.bezierCurveTo(218, 369, 96, 346, 40, 327);
+            casquette.bezierCurveTo(51, 305, 74, 262, 85, 240);
+            casquette.closePath();
+            casquette.stroke();
+            casquette.shadowOffsetX = 15;
+            casquette.shadowOffsetY = 15;
+            casquette.shadowBlur = 0;
+            casquette.shadowColor = "rgba(0,0,0,0)";
+            casquette.fillStyle = "rgba(9,130,244,1)";
+            casquette.fill();
+        }
+    </script>
+</head>
+
+<body onload="setcanvas()">
+    <canvas id="casquette" width="500" height="500"></canvas>
+    <a href="../../index.html" class="back_to_index">Revenir à l'index !</a>
+
+</body>
+
+</html>

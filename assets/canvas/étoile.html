@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" href="canvas.css">
+
+    <title>Étoile</title>
+    <!--[IF LT IE 9]><script type="text/javascript" src = "excanvas.js" ></script><![endif]-->
+    <script type="text/javascript">
+        function setcanvas() {
+            let canvas = document.getElementById("canvasarea");
+            if (canvas.getContext) {
+                let etoile = canvas.getContext("2d");
+                drawcanvas(etoile);
+            } else {
+                alert("Canvas NOT supported");
+            }
+        }
+
+        function drawcanvas(etoile) {
+
+            //Shape3;
+            etoile.shadowColor = "rgba(0,0,0,0)";
+            etoile.strokeStyle = "rgba(63,34,3,1)";
+            etoile.lineWidth = 5;
+            etoile.lineCap = "butt";
+            etoile.lineJoin = "miter";
+            etoile.beginPath();
+            etoile.moveTo(252, 24);
+            etoile.bezierCurveTo(379, 24, 482, 127, 482, 254);
+            etoile.bezierCurveTo(482, 380, 379, 483, 252, 483);
+            etoile.bezierCurveTo(124, 483, 21, 380, 21, 254);
+            etoile.bezierCurveTo(21, 127, 124, 24, 252, 24);
+            etoile.closePath();
+            etoile.stroke();
+            etoile.shadowOffsetX = -1;
+            etoile.shadowOffsetY = -7;
+            etoile.shadowBlur = 6.2;
+            etoile.shadowColor = "rgba(0,0,0,1)";
+            grad = etoile.createRadialGradient(180, 160, 107, 242, 249, 231);
+            grad.addColorStop(0, "rgba(68,31,6,1)");
+            grad.addColorStop(1, "rgba(91,37,1,1)");
+            etoile.fillStyle = grad;
+            etoile.fill();
+
+            //Shape4;
+            etoile.shadowColor = "rgba(0,0,0,0)";
+            etoile.strokeStyle = "rgba(250,218,4,1)";
+            etoile.lineWidth = 3;
+            etoile.lineCap = "butt";
+            etoile.lineJoin = "miter";
+            etoile.beginPath();
+            etoile.moveTo(252, 33);
+            etoile.bezierCurveTo(229, 73, 199, 129, 178, 165);
+            etoile.bezierCurveTo(153, 165, 78, 165, 53, 165);
+            etoile.bezierCurveTo(81, 193, 125, 237, 153, 265);
+            etoile.bezierCurveTo(134, 297, 115, 382, 105, 420);
+            etoile.bezierCurveTo(143, 389, 224, 336, 266, 308);
+            etoile.bezierCurveTo(309, 341, 361, 381, 404, 413);
+            etoile.bezierCurveTo(387, 381, 367, 308, 350, 276);
+            etoile.bezierCurveTo(382, 246, 422, 199, 454, 168);
+            etoile.bezierCurveTo(422, 168, 373, 167, 340, 166);
+            etoile.bezierCurveTo(318, 131, 275, 69, 252, 33);
+            etoile.closePath();
+            etoile.stroke();
+            etoile.shadowOffsetX = 1;
+            etoile.shadowOffsetY = -4;
+            etoile.shadowBlur = 5.6;
+            etoile.shadowColor = "rgba(0,0,0,0.97)";
+            grad = etoile.createRadialGradient(255, 215, 54, 255, 224, 216);
+            grad.addColorStop(0, "rgba(238,240,71,1)");
+            grad.addColorStop(1, "rgba(252,255,5,1)");
+            etoile.fillStyle = grad;
+            etoile.fill();
+        }
+    </script>
+</head>
+
+<body onload="setcanvas()">
+    <canvas id="canvasarea" width="500" height="500"></canvas>
+    <a href="../../index.html" class="back_to_index">Revenir à l'index !</a>
+
+</body>
+
+</html>

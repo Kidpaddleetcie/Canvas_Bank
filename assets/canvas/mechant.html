@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Mechant</title>
+    <link rel="stylesheet" href="canvas.css">
+
+    <!--[IF LT IE 9]><script type="text/javascript" src = "excanvas.js" ></script><![endif]-->
+    <script type="text/javascript">
+        function setcanvas() {
+            let mechant = document.getElementById("mechant");
+            if (mechant.getContext) {
+                let evil = mechant.getContext("2d");
+                drawcanvas(evil);
+            } else {
+                alert("Canvas NOT supported");
+            }
+        }
+
+        function drawcanvas(evil) {
+
+            //Shape0;
+            evil.shadowColor = "rgba(0,0,0,0)";
+            evil.strokeStyle = "rgba(0,0,0,1)";
+            evil.lineWidth = 1;
+            evil.lineCap = "butt";
+            evil.lineJoin = "miter";
+            evil.beginPath();
+            evil.moveTo(NaN, NaN);
+            evil.closePath();
+            evil.stroke();
+            evil.shadowOffsetX = 15;
+            evil.shadowOffsetY = 15;
+            evil.shadowBlur = 0;
+            evil.shadowColor = "rgba(0,0,0,0)";
+            evil.fillStyle = "rgba(255,255,255,1)";
+            evil.fill();
+
+            //Shape1;
+            evil.shadowColor = "rgba(0,0,0,0)";
+            evil.strokeStyle = "rgba(0,0,0,1)";
+            evil.lineWidth = 1;
+            evil.lineCap = "butt";
+            evil.lineJoin = "miter";
+            evil.beginPath();
+            evil.moveTo(254, 39);
+            evil.bezierCurveTo(374, 39, 471, 134, 471, 251);
+            evil.bezierCurveTo(471, 367, 374, 462, 254, 462);
+            evil.bezierCurveTo(133, 462, 36, 367, 36, 251);
+            evil.bezierCurveTo(36, 134, 133, 39, 254, 39);
+            evil.closePath();
+            evil.stroke();
+            evil.shadowOffsetX = 15;
+            evil.shadowOffsetY = 15;
+            evil.shadowBlur = 0;
+            evil.shadowColor = "rgba(0,0,0,0)";
+            evil.fillStyle = "rgba(255,252,0,1)";
+            evil.fill();
+
+            //Shape2;
+            evil.shadowColor = "rgba(0,0,0,0)";
+            evil.strokeStyle = "rgba(0,0,0,1)";
+            evil.lineWidth = 1;
+            evil.lineCap = "butt";
+            evil.lineJoin = "miter";
+            evil.beginPath();
+            evil.moveTo(127, 95);
+            evil.bezierCurveTo(113, 99, 111, 108, 128, 125);
+            evil.bezierCurveTo(135, 142, 196, 188, 220, 200);
+            evil.bezierCurveTo(215, 164, 145, 85, 127, 95);
+            evil.closePath();
+            evil.stroke();
+            evil.shadowOffsetX = 15;
+            evil.shadowOffsetY = 20;
+            evil.shadowBlur = 6.2;
+            evil.shadowColor = "rgba(0,0,0,0.5)";
+            evil.fillStyle = "rgba(0,0,0,1)";
+            evil.fill();
+
+            //Shape3;
+            evil.shadowColor = "rgba(0,0,0,0)";
+            evil.strokeStyle = "rgba(0,0,0,1)";
+            evil.lineWidth = 1;
+            evil.lineCap = "butt";
+            evil.lineJoin = "miter";
+            evil.beginPath();
+            evil.moveTo(389, 98);
+            evil.bezierCurveTo(403, 102, 405, 111, 388, 128);
+            evil.bezierCurveTo(381, 145, 320, 191, 296, 203);
+            evil.bezierCurveTo(301, 167, 371, 88, 389, 98);
+            evil.closePath();
+            evil.stroke();
+            evil.shadowOffsetX = -15;
+            evil.shadowOffsetY = 20;
+            evil.shadowBlur = 6.2;
+            evil.shadowColor = "rgba(0,0,0,0.5)";
+            evil.fillStyle = "rgba(0,0,0,1)";
+            evil.fill();
+
+            //Shape4;
+            evil.shadowColor = "rgba(0,0,0,0)";
+            evil.strokeStyle = "rgba(0,0,0,1)";
+            evil.lineWidth = 1;
+            evil.lineCap = "butt";
+            evil.lineJoin = "miter";
+            evil.beginPath();
+            evil.moveTo(159, 187);
+            evil.bezierCurveTo(172, 187, 183, 205, 183, 228);
+            evil.bezierCurveTo(183, 251, 172, 269, 159, 269);
+            evil.bezierCurveTo(145, 269, 134, 251, 134, 228);
+            evil.bezierCurveTo(134, 205, 145, 187, 159, 187);
+            evil.closePath();
+            evil.stroke();
+            evil.shadowOffsetX = 1;
+            evil.shadowOffsetY = 4;
+            evil.shadowBlur = 15.8;
+            evil.shadowColor = "rgba(12,0,0,0.69)";
+            evil.fillStyle = "rgba(0,0,0,1)";
+            evil.fill();
+
+            //Shape5;
+            evil.shadowColor = "rgba(0,0,0,0)";
+            evil.strokeStyle = "rgba(0,0,0,1)";
+            evil.lineWidth = 1;
+            evil.lineCap = "butt";
+            evil.lineJoin = "miter";
+            evil.beginPath();
+            evil.moveTo(356, 192);
+            evil.bezierCurveTo(369, 192, 380, 210, 380, 233);
+            evil.bezierCurveTo(380, 256, 369, 274, 356, 274);
+            evil.bezierCurveTo(342, 274, 331, 256, 331, 233);
+            evil.bezierCurveTo(331, 210, 342, 192, 356, 192);
+            evil.closePath();
+            evil.stroke();
+            evil.shadowOffsetX = 1;
+            evil.shadowOffsetY = 4;
+            evil.shadowBlur = 15.8;
+            evil.shadowColor = "rgba(12,0,0,0.69)";
+            evil.fillStyle = "rgba(0,0,0,1)";
+            evil.fill();
+
+            //Shape6;
+            evil.shadowColor = "rgba(0,0,0,0)";
+            evil.strokeStyle = "rgba(0,0,0,1)";
+            evil.lineWidth = 1;
+            evil.lineCap = "butt";
+            evil.lineJoin = "miter";
+            evil.beginPath();
+            evil.moveTo(121, 345);
+            evil.bezierCurveTo(103, 372, 119, 370, 118, 378);
+            evil.bezierCurveTo(144, 402, 203, 430, 243, 440);
+            evil.bezierCurveTo(299, 428, 354, 404, 386, 384);
+            evil.bezierCurveTo(386, 377, 403, 374, 386, 355);
+            evil.bezierCurveTo(371, 339, 368, 347, 362, 344);
+            evil.bezierCurveTo(332, 350, 334, 394, 243, 406);
+            evil.bezierCurveTo(169, 394, 185, 355, 156, 340);
+            evil.bezierCurveTo(147, 341, 150, 333, 121, 345);
+            evil.closePath();
+            evil.stroke();
+            evil.shadowOffsetX = 4;
+            evil.shadowOffsetY = 7;
+            evil.shadowBlur = 21.4;
+            evil.shadowColor = "rgba(0,0,0,0.9)";
+            evil.fillStyle = "rgba(0,0,0,1)";
+            evil.fill();
+        }
+    </script>
+</head>
+
+<body onload="setcanvas()">
+    <canvas id="mechant" width="500" height="500"></canvas>
+    <a href="../../index.html" class="back_to_index">Revenir à l'index !</a>
+</body>
+
+</html>
